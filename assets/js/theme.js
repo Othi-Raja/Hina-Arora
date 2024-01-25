@@ -4,7 +4,6 @@
     Author:  Wordpressriver
     Author URI: https://themeforest.net/user/wordpressriver
     Version: 1.0
-
     Note: This is Main Js file
 -----------------------------------------------------------------------------------
     Js INDEX
@@ -22,10 +21,8 @@
     ## wow JS
     ## Item Active
 -----------------------------------------------------------------------------------*/
-
 (function($) {
     'use strict';
-
     //===== Main Menu
     function mainMenu() {
         // Variables
@@ -91,17 +88,14 @@
         $(".navbar-toggler").removeClass("active");
         $(".nav-menu").removeClass("menu-on");
     });
-
     // Document Ready
     $(document).ready(function() {
         mainMenu();
     });
-
     //===== Prealoder
     $(window).on('load', function(event) {
         $('.preloader').delay(500).fadeOut('500');
     })
-    
     //===== Sticky
     $(window).on('scroll', function(event) {
         var scroll = $(window).scrollTop();
@@ -111,7 +105,6 @@
             $(".header-navigation").addClass("sticky");
         }
     });
-
     //===== Back to top
     $(window).on('scroll', function(event) {
         if ($(this).scrollTop() > 600) {
@@ -126,20 +119,17 @@
             scrollTop: 0,
         }, 1500);
     });
-
     //===== Counter js
     $('.count').counterUp({
         delay: 100,
         time: 4000
     });
-
     //===== Magnific-popup js
     $('.video-popup').magnificPopup({
         type: 'iframe',
         removalDelay: 300,
         mainClass: 'mfp-fade'
     });
-
     $(".img-popup").magnificPopup({
         type: "image",
          gallery: { 
@@ -148,10 +138,7 @@
     });
     //===== Nice select js
     $('select').niceSelect();
-
-    
     //===== Slick slider js
-    
     $('.portfolio-slider-one').slick({
 		dots: true,
 		arrows: false,
@@ -303,25 +290,18 @@
             percentPosition: true
         });
     });
-
     //===== Wow js
-    
     // new WOW().init();
-
     // Item Active
     $('.counter-area-v2').on('mouseover', '.counter-item', function() {
         $('.counter-item.item-active').removeClass('item-active');
         $(this).addClass('item-active');
     });
-
     //====== Parallax js
-
     $('.scene').each(function () {
         new Parallax($(this)[0]);
     });
-    
     // page_scroll JS
-
     $("a.page-scroll").on('click', function (e) {
         e.preventDefault();
         var hash = this.hash;
@@ -331,34 +311,27 @@
         },1000);
     });
     //====== Pricing tab Js
-
     $('.pricing-nav-tab a:last-child').click(function () {
         $(this).parent('.pricing-nav-tab').addClass('for-year');
     });
     $('.pricing-nav-tab a:first-child').click(function () {
         $(this).parent('.pricing-nav-tab').removeClass('for-year');
     });
-
 })(window.jQuery);
-
 function toggleReadMore(contentId) {
     const content = document.getElementById(contentId);
     const allContents = document.querySelectorAll('.read-more-content');
-
     // Close all other read more sections
     allContents.forEach((item) => {
         if (item.id !== contentId) {
             item.classList.remove('expanded');
         }
     });
-
     // Toggle the selected read more section
     content.classList.toggle('expanded');
-
     // Update buttons for all sections
     updateReadMoreButtons();
 }
-
 function updateReadMoreButtons() {
     const allContents = document.querySelectorAll('.read-more-content');
     allContents.forEach((content) => {
@@ -366,8 +339,6 @@ function updateReadMoreButtons() {
         button.style.display = content.classList.contains('expanded') ? 'none' : 'block';
     });
 }
-
-
  // Create a link dictionary using JavaScript
  const linkDictionary = {
     productLink1:()=>window.open( 'https://topmate.io/hina_arora/755538',"_blank"),
@@ -377,15 +348,11 @@ function updateReadMoreButtons() {
     // Add more links as needed
 };
 // scroll
-
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
-
     if (section) {
         section.scrollIntoView({
             behavior: 'smooth'
         });
     }
 }
-
-

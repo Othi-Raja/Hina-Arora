@@ -1,17 +1,13 @@
 /*-----------------------------------------------------------------------------------
-
     Template Name: Pixlab - Creative Agency HTML Template
     Description: Pixlab – Creative Agency HTML Template have an awesome design for a website of Agency, Web Studio, Blog, Gallery Photo, Corporate Company, Community and other. It’s the clean, modern and beautiful grid-based template.
     Author:  Wordpressriver
     Author URI: https://themeforest.net/user/wordpressriver
     Version: 1.0
-
 ----------------------------------------------------------------------------------
     ===================
         CSS INDEX
     ===================
-
-    
     01. Start Common  css
     02. Start Header css
     03. Hero css
@@ -28,16 +24,12 @@
     14. Blog Section css
     15. Contact css
     16. Footer css
-
 ----------------------------------------------------------------------------------*/
-
-
 /*---==========================
    01. Start Common  css 
 =========================---*/
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
 /* Animate css */
 @import url(../vendor/animate.css);
 /* Flaticon css */
@@ -52,7 +44,6 @@
 @import url(../vendor/magnific-popup/dist/magnific-popup.css);
 /* Nice-select css */
 @import url(../vendor/nice-select/css/nice-select.css);
-
 /* Root css */
 :root {
 	--text-color: #808285;
@@ -120,7 +111,6 @@ h3{
 h4{
     font-size: 24px;
     line-height: 34px;
-
 }
 h5{
     font-size: 20px;
@@ -255,7 +245,6 @@ ul.social-link li{
     font-size: 45px;
     line-height: 50px;
 }
-
 .fill-text {
     line-height: 1;
     letter-spacing: -0.03em;
@@ -276,26 +265,19 @@ ul.social-link li{
     padding: 20px;
     /* From https://css.glass */
 background: rgba(216, 248, 248, 0.2);
- 
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
   }
-
   .read-more-content.expanded {
     max-height: none;
     z-index: 2;
     background-color: white;
     font-size:small ;
-   
-    
-   
   }
-
   .read-more-button {
     cursor: pointer;
     color: blue;
     padding: 20px;
-    
   }
   .message-box {
     background-color: #fff;
@@ -308,7 +290,6 @@ backdrop-filter: blur(5px);
     font-weight: 700;
     margin-left: 3px;
 }
-
 /* products */
 .product-card {
     position: relative;
@@ -320,7 +301,6 @@ backdrop-filter: blur(5px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
 }
-
 .product-icon-top-left {
     position: absolute;
     top: 10px;
@@ -329,11 +309,9 @@ backdrop-filter: blur(5px);
     align-items: center;
     color: #3498db; /* Calendar icon color */
 }
-
 .product-icon-top-left i {
     margin-right: 5px;
 }
-
 .product-icon-top-right {
     position: absolute;
     top: 10px;
@@ -341,23 +319,19 @@ backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
 }
-
 .product-icon-top-right i {
     margin-right: 5px;
 }
-
 .circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #e74c3c; /* Circle background color */
 }
-
 .product-title {
     text-align: center;
     margin-top: 60px; /* Adjust based on your design */
 }
-
 .product-bottom-left,
 .product-bottom-right {
     position: absolute;
@@ -367,26 +341,19 @@ backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-between;
 }
-
 .product-bottom-left p,
 .product-bottom-right p {
     margin: 0;
 }
-
 .product-bottom-left p {
     color: #27ae60; /* Timing color */
 }
-
 .product-bottom-right p {
     color: #e67e22; /* Price color */
 }
-
 /* products end */
- 
 /* join Now btn  */
   /* Style the button */
-
-
 /* CSS */
 .buttonJoin {
   background-color: var(--blue-dark);
@@ -409,20 +376,16 @@ backdrop-filter: blur(5px);
   touch-action: manipulation;
   margin-top:30px ;
 }
-
 .nav-link{
     cursor: pointer;
 }
 .buttonJoin:hover {
   background-color:var(--heading);
- 
 }
-
 .buttonJoin:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
 .buttonJoin:focus-visible {
   box-shadow: none;
 }
@@ -438,12 +401,9 @@ backdrop-filter: blur(5px);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .followmebtn:hover {
     background-color: #3498dbb1;
 }
- 
-
 .profile-icon>img {
     width: 30px;
     height: 30px;
@@ -451,7 +411,6 @@ backdrop-filter: blur(5px);
     background-color: gray;
     margin-right: 10px;
 }
-
 .message {
     font-size: 14px;
     color: #333;
@@ -494,13 +453,10 @@ backdrop-filter: blur(5px);
     }
 }
 /* All colors */
-
 .blue-dark{
     color: var(--blue-dark);
 }
-
 /* All Bg */
-
 .dark-blue-bg{
     background-color: var(--blue-dark);
 }
@@ -510,10 +466,7 @@ backdrop-filter: blur(5px);
 .light-gray-bg{
     background-color: #f9f9f9;
 }
-
-
 /* All Button */
-
 button {
 	border: none;
 }
@@ -616,7 +569,6 @@ button {
 }
 .preloader .loader {
     margin: 0 auto;
-    
     position: relative;
     text-align: center;
 }
@@ -665,24 +617,19 @@ button {
     75% { -webkit-transform: translateY(9px) rotate(67.5deg); transform: translateY(9px) rotate(67.5deg); }
     100% { -webkit-transform: translateY(0) rotate(90deg); transform: translateY(0) rotate(90deg); }
 } 
-
 @-webkit-keyframes shadow {
     50% {
       -webkit-transform: scale(1.2,1);
               transform: scale(1.2,1);
     }
 } 
-
 @keyframes shadow {
     50% {
       -webkit-transform: scale(1.2,1);
               transform: scale(1.2,1);
     }
 }
-
-
 /* Floating css */
-
 .animate-float-x {
     -webkit-animation-name: float-x;
     animation-name: float-x;
@@ -693,7 +640,6 @@ button {
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
-  
 .animate-float-y {
     -webkit-animation-name: float-y;
     animation-name: float-y;
@@ -704,7 +650,6 @@ button {
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
-  
 @-webkit-keyframes float-x {
     0% {
       -webkit-transform: translateX(-20px);
@@ -802,15 +747,12 @@ button {
     background: var(--heading);
     color: #fff;
 }
-
-
 /* Nice select */
 .nice-select{
     padding: 0;
     padding-right: 10px;
     font-size: 18px;
 }
-
 .nice-select:after{
     content: '\f107';
     font-family: 'Font Awesome 5 Pro';
@@ -818,7 +760,6 @@ button {
     margin-left: 7px;
     float: right;
 }
-
 /* Animation */
 @-webkit-keyframes shakeX {
     from,
@@ -826,7 +767,6 @@ button {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
-  
     10%,
     30%,
     50%,
@@ -835,7 +775,6 @@ button {
       -webkit-transform: translate3d(-5px, 0, 0);
       transform: translate3d(-5px, 0, 0);
     }
-  
     20%,
     40%,
     60%,
@@ -850,7 +789,6 @@ button {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
-  
     10%,
     30%,
     50%,
@@ -867,12 +805,10 @@ button {
       transform: translate3d(5px, 0, 0);
     }
 }
-
 /* Offcanvas Panel */
 .offcanvas-panel .offcanvas-panel-inner::-webkit-scrollbar {
     display: none;
 }
-
 .offcanvas-panel {
     position: fixed;
     right: 0;
@@ -1007,8 +943,6 @@ button {
 /*---==========================
    End Common css 
 =========================---*/
-
-
 /*---==========================
    02. Start Header css 
 =========================---*/
@@ -1020,7 +954,6 @@ button {
     width: 100%;
     z-index: 999;
 }
-
 /* Header Navigation Default */
 .nav-ml-auto{
     margin-left: auto;
@@ -1352,7 +1285,6 @@ button {
     right: 20px;
     background-color: transparent;
 }
-
 /* Header Right Nav */
 .header-right-nav ul{
     display: -webkit-inline-box;
@@ -1383,7 +1315,6 @@ button {
 .header-right-nav ul li.navbar-toggle-btn{
     display: none;
 }
-
 /* Navigation Style v1 */
 .header-navigation.breakpoint-on.navigation-style-v1 .primary-menu{
     padding-bottom: 0;
@@ -1396,10 +1327,7 @@ button {
     padding-left: 70px;
     padding-right: 70px;
 }
-
-
 /* Navigation Style v2 */
-
 .navigation-style-v2 .container-fluid{
     padding-left: 190px;
     padding-right: 190px;
@@ -1434,8 +1362,6 @@ button {
 .navigation-style-v2 .header-right-nav ul li.bar-item a{
     border-radius: 50%;
 }
-
-
 /* Navigation Style v3 */
 .navigation-style-v3 .container-fluid{
     padding-left: 70px;
@@ -1518,8 +1444,6 @@ button {
 /*---==========================
    End Header css 
 =========================---*/
-
-
 /*---==========================
    03. Start Hero Section css 
 =========================---*/
@@ -1609,9 +1533,7 @@ button {
     bottom: 110px;
     left: 45%;
 }
-
 /* Hero Banner Two */
-
 .hero-banner-v2{
     padding: 120px 0 70px;
     overflow: hidden;
@@ -1673,9 +1595,7 @@ button {
     left: -50px;
     bottom: 100px;
 }
-
 /* Hero Banner v3 */
-
 .hero-banner-v3{
     padding: 120px 0 270px;
 }
@@ -1740,10 +1660,7 @@ button {
 .hero-banner-v3 .hero-content .main-btn{
     padding: 13px 40px;
 }
-
-
 /* Page Banner */
-
 .page-banner{
     padding: 250px 0 160px;
     background-image: -ms-linear-gradient( 0deg, rgb(89,86,233) 0%, rgb(0,208,156) 100%);
@@ -1849,11 +1766,9 @@ button {
 /*---==========================
    End Hero Section css 
 =========================---*/
-
 /*---==========================
    04. Start About Section css 
 ============================---*/
-
 .about-area-v1 .img-holder-box{
     position: relative;
 }
@@ -1876,9 +1791,7 @@ button {
 .about-area-v1 .text-wrapper .list-style-one li{
     margin-bottom: 15px;
 }
-
 /* About area v2 */
-
 .about-area-v2{
     position: relative;
     z-index: 1;
@@ -1905,9 +1818,7 @@ button {
     bottom: 65px;
     left: -40%;
 }
-
 /* About area v3 */
-
 .about-area-v3 .img-holder{
     margin-left: -150px;
 }
@@ -1924,7 +1835,6 @@ button {
 .about-area-v3 .text-wrapper .section-title p{
     margin-bottom: 0;
 }
-
 /* About area v3 */
 .about-area-v4 .img-holder{
     padding-right: 70px;
@@ -1952,10 +1862,7 @@ button {
     color: var(--blue-dark);
     font-size: 35px;
 }
-
-
 /* Fancy Text Block */
-
 .fancy-text-block-v1{
     padding-top: 330px;
 }
@@ -1990,11 +1897,9 @@ button {
 /*---==========================
    End About Section css 
 =========================---*/
-
 /*---==============================
    05. Start Service Section css 
 ==============================---*/
-
 .service-item{
     position: relative;
     z-index: 1;
@@ -2098,11 +2003,9 @@ button {
 /*---==========================
    End Service Section css 
 =========================---*/
-
 /*---===============================
    06. Start Portfolio Section css 
 ================================---*/
-
 .slick-dots li button{
     position: relative;
     width: 7px;
@@ -2134,9 +2037,7 @@ button {
     visibility: visible;
     opacity: 1;
 }
-
 /* Portfolio Filter Button */
-
 .portfolio-filter-button .filter-btn li{
     display: inline-block;
     font-weight: 700;
@@ -2157,10 +2058,7 @@ button {
     -webkit-box-shadow: 0px 10px 30px 0px rgba(89, 86, 233, 0.2);
             box-shadow: 0px 10px 30px 0px rgba(89, 86, 233, 0.2);
 }
-
-
 /* Portfolio Style One */
-
 .portfolio-style-one:hover .img-holder .portfolio-hover{
     visibility: visible;
     opacity: 1;
@@ -2227,9 +2125,7 @@ button {
     font-weight: 500;
     font-size: 18px;
 }
-
 /* Portfolio Style two */
-
 .portfolio-style-two:hover .img-holder .portfolio-hover{
     visibility: visible;
     opacity: 1;
@@ -2278,7 +2174,6 @@ button {
     background-color: #fff;
     padding: 5px 20px;
 }
-
 .portfolio-slider-one{
     margin-left: -15px;
     margin-right: -15px;
@@ -2294,9 +2189,7 @@ button {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 /* Portfolio style three */
-
 .portfolio-style-three .img-holder{
     position: relative;
     overflow: hidden;
@@ -2340,7 +2233,6 @@ button {
     color: var(--blue-dark);
 }
 /* Portfolio-details */
-
 .portfolio-details-wrapper .portfolio-item{
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(89, 86, 233, 0.15);
@@ -2409,8 +2301,6 @@ button {
 /*---==========================
    End Portfolio Section css 
 =========================---*/
-
-
 /*---==============================
    07. Start Counter Section css 
 ================================---*/
@@ -2453,7 +2343,6 @@ button {
     -o-transition: all .3s;
     transition: all .3s;
 }
- 
 .counter-area-v2 .counter-item .icon,
 .counter-area-v1 .counter-item .icon{
     font-size: 70px;
@@ -2464,7 +2353,6 @@ button {
 .counter-area-v1 .counter-item .text h2{
     margin-bottom: 8px;
 }
-
 .counter-area-v2 .counter-item{
     padding: 60px 45px 53px;
     border-radius: 7px;
@@ -2485,7 +2373,6 @@ button {
     visibility: visible;
     opacity: 1;
 }
-
 .counter-area-v3 .shape{
     position: absolute;
     z-index: -1;
@@ -2528,9 +2415,6 @@ button {
 /*---==========================
    End Counter Section css 
 =========================---*/
-
-
-
 /*---=============================
     08. Start Testimonial css 
 ==============================---*/
@@ -2609,9 +2493,7 @@ button {
 .testimonial-slider-one .slick-dots li button:after{
     border-color: #fff;
 }
-
 /* Testimonial Area v2 */
-
 .testimonial-area-v2 .text-wrapper{
     padding-left: 70px;
 }
@@ -2667,9 +2549,7 @@ button {
 .testimonial-two-dots ul.slick-dots li button:after{
     border-color: var(--blue-dark);
 }
-
 /* Testimonial Area v3 */
-
 .testimonial-area-v3 .shape{
     position: absolute;
     z-index: -1;
@@ -2737,10 +2617,7 @@ button {
     margin-bottom: 0;
     font-weight: 500;
 }
-
 /* Testimonial Area v4 */
-
-
 .testimonial-area-v4 .img-holder{
     position: relative;
     z-index: 1;
@@ -2804,8 +2681,6 @@ button {
 /*---==========================
     End Testimonial css 
 =========================---*/
-
-
 /*---==========================
     09. Start CTA Section css 
 =========================---*/
@@ -2839,18 +2714,14 @@ button {
     border-radius: 151.49px;
     overflow: hidden;
 }
-
 /* CTA Area v2 */
-
 .cta-area-v2 .cta-wrapper{
     position: relative;
     padding: 50px 70px;
     background-color: var(--blue-dark);
     margin-bottom: -100px;
 }
-
 /* CTA Area v3 */
-
 .cta-area-v3{
     background-color: #1e266d;
 }
@@ -2873,7 +2744,6 @@ button {
 /*---==========================
     End CTA Section css 
 =========================---*/
-
 /*---================================
     10. Start Pricing Section css 
 ===============================---*/
@@ -2982,14 +2852,11 @@ button {
     text-align: center;
     padding: 14px 35px;
 }
-
 /* Pricing Item Two */
-
 .pricing-item-two{
     background-color: #fff;
     padding: 35px 40px 40px;
 }
-
 /* Pricing Item Three */
 .pricing-area-v3 .shape{
     position: absolute;
@@ -3097,12 +2964,9 @@ button {
 .pricing-nav-tab a:last-child{
     margin-left: 40px;
 }
-
 /*---==========================
     End Pricing Section css 
 =========================---*/
-
-
 /*---=====================
     11. Start Team  css 
 ====================---*/
@@ -3191,9 +3055,7 @@ button {
 .team-area-v1 .team-item .text p.position{
     font-weight: 500;
 }
-
 /* Team Area v2 css */
-
 .team-area-v2 .team-item:hover .text .social-link{
     visibility: visible;
     opacity: 1;
@@ -3251,9 +3113,7 @@ button {
     -o-transition: all .3s;
     transition: all .3s;
 }
-
 /* Team area V3 css */
-
 .team-area-v3 .shape{
     position: absolute;
     z-index: -1;
@@ -3322,7 +3182,6 @@ button {
 }
 .team-area-v3 .team-item:hover .img-holder .hover-content-two{
     bottom: 40px;
-    
 }
 .team-area-v3 .team-item .img-holder .hover-content-two{
     position: absolute;
@@ -3357,9 +3216,7 @@ button {
     background-color: var(--blue-dark);
     color: #fff;
 }
-
 /* Team Details css */
-
 .team-details-section .img-holder .shape,
 .team-details-section .shape{
     position: absolute;
@@ -3421,7 +3278,6 @@ button {
 /*---==================
     End Team  css 
 ====================---*/
-
 /*---=====================
     12. Start Skill  css 
 ======================---*/
@@ -3472,9 +3328,7 @@ button {
 .skill-area-v1 .text-wrapper{
     padding-left: 70px;
 }
-
 /* Skill Area v2 */
-
 .skill-area-v2 .shape{
     position: absolute;
     z-index: -1;
@@ -3503,17 +3357,13 @@ button {
             transform: translateY(-50%);
     left: -200px;
 }
-
 /*---==================
     End Skill  css 
 ====================---*/
-
 /*---========================
     13. Start Elements  css 
 ==========================---*/
-
 /* Video CSS */
-
 .intro-area-v1 .play-content{
     padding: 220px 0;
     position: relative;
@@ -3535,9 +3385,7 @@ button {
     background-color: var(--blue-dark);
     color: #fff;
 }
-
 /* Features-area */
-
 .features-area .text-wrapper p{
     margin-bottom: 30px;
 }
@@ -3576,10 +3424,7 @@ button {
             justify-content: center;
     margin-right: 15px;
 }
-
-
 /* Process Area v1 */
-
 .process-area-v1 .process-item{
     padding: 0 35px;
 }
@@ -3627,9 +3472,7 @@ button {
 .process-area-v1 .process-item .text h4{
     margin-bottom: 10px;
 }
-
 /* Process Area v1 */
-
 .process-area-v2 .shape{
     position: absolute;
     z-index: -1;
@@ -3675,9 +3518,7 @@ button {
 .process-area-v2 .process-item .text h4{
     margin-bottom: 5px;
 }
-
 /* Partners Css */
-
 .partners-wrapper{
     border: 1px solid  rgba(80, 56, 238, 0.102);
     border-bottom: none;
@@ -3769,7 +3610,6 @@ button {
     text-align: center;
 }
 /* list Style */
-
 .list-style-two li,
 .list-style-one li{
     display: -webkit-box;
@@ -3818,8 +3658,6 @@ button {
 /*---==================
     End Elements  css 
 ====================---*/
-
-
 /*---============================
     14. Start Blog Section css 
 =============================---*/
@@ -3849,9 +3687,7 @@ button {
     padding: 8px 15px;
     line-height: 21px;
 }
-
 /* Blog Area V1 */
-
 .blog-area-v1 .blog-post-item:hover .entry-content{
     -webkit-box-shadow: 0px 10px 60px 0px rgba(89, 86, 233, 0.1);
             box-shadow: 0px 10px 60px 0px rgba(89, 86, 233, 0.1);
@@ -3876,9 +3712,7 @@ button {
 .blog-area-v1 .blog-post-item .entry-content h3.title:hover{
     color: var(--blue-dark);
 }
-
 /* Blog Area V2 */
-
 .blog-area-v2 .blog-post-item{
     position: relative;
     z-index: 1;
@@ -3935,9 +3769,7 @@ button {
     -o-transition: all .3s;
     transition: all .3s;
 }
-
 /* Blog Area V3 */
-
 .blog-area-v3 .blog-post-item .post-thumbnail img{
     border-radius: 7px 7px 0 0;
 }
@@ -3995,7 +3827,6 @@ button {
     color: var(--blue-dark);
 }
 /* Blog Standard Section */
-
 .blog-standard-post-item .post-thumbnail img{
     border-radius: 7px;
     width: 100%;
@@ -4080,10 +3911,7 @@ button {
 .blog-standard-post-item.post-with-bg .hover-content .post-meta ul li span{
     color: #fff;
 }
-
 /* Blog details wrapper */
-
-
 .blog-details-wrapper .blog-post-item .post-thumbnail img{
     border-radius: 7px;
 }
@@ -4128,7 +3956,6 @@ button {
     vertical-align: middle;
     margin-right: 20px;
 }
-
 .post-share-tag .post-tag-cloud ul li{
     display: inline-block;
 }
@@ -4194,7 +4021,6 @@ button {
 .post-author-box .author-content ul.social-link li a:hover{
     color: #fff;
 }
-
 .comments-area h4.comments-title{
     margin-bottom: 35px;
 }
@@ -4296,9 +4122,7 @@ button {
 .comments-respond .comment-form .nice-select.open{
     border-color: var(--blue-dark);
 }
-
 /* Sidebar widget area */
-
 .sidebar-widget-area .widget{
     border: 1px solid rgba(88, 86, 233, 0.15);
     border-radius: 5px;
@@ -4377,7 +4201,6 @@ button {
     padding-bottom: 0;
     border-bottom: none;
 }
-
 .sidebar-widget-area .widget.contact-info-widget{
     border:none;
     padding: 60px 50px;
@@ -4499,17 +4322,13 @@ button {
     background-color: var(--blue-dark);
     color: #fff;
 }
-
 /*---==========================
     End Blog Section css 
 =========================---*/
-
 /*---==========================
     15. Start Contact css 
 =========================---*/
-
 /* Information Item */
-
 .information-item:after{
     position: absolute;
     font-size: 135px;
@@ -4644,7 +4463,6 @@ button {
     color: var(--blue-dark);
 }
 /* Contact Form */
-
 .contact-form form .nice-select,
 .contact-form form .form_control{
     margin-bottom: 30px;
@@ -4680,9 +4498,7 @@ button {
 .contact-form form .form_control:focus{
     border-color: var(--blue-dark);
 }
-
 /* Contact Area v1 */
-
 .contact-area-v1{
     overflow: hidden;
 }
@@ -4724,9 +4540,7 @@ button {
 .contact-area-v1 .img-holder img{
     border-radius: 185px;
 }
-
 /* Contact Area v2 */
-
 .contact-area-v2 .contact-wrapper{
     background-color: #FFF;
     padding-left: 90px;
@@ -4747,20 +4561,16 @@ button {
 .contact-area-v2 .information-style-two{
     max-width: 380px;
 }
-
 /* Contact Area v3 */
-
 .contact-info-v1 .map-box iframe{
     width: 100%;
     height: 550px;
     display: inherit;
     border: none;
 }
-
 /*---==========================
     End Contact Section css 
 =========================---*/
-
 /*---==========================
     16. Start Footer css 
 =========================---*/
@@ -4781,9 +4591,7 @@ button {
 .footer-top-two{
     border-bottom: 1px solid rgba(119, 121, 242, 0.149);
 }
-
 /* Footer Widget CSS */
-
 .footer-widget .widget h4.widget-title{
     margin-bottom: 20px;
 }
@@ -4892,7 +4700,6 @@ button {
 .footer-copyright .footer-nav ul li a:hover{
     color: var(--blue-dark);
 }
-
 /* Footer Gradient */
 .footer-gradient-bg{
     background: -webkit-gradient( linear, left bottom, left top, from(rgba(88, 86, 233, 0.149)), to(rgba(88, 86, 233, 0.149)));
@@ -4920,7 +4727,6 @@ button {
 .footer-gradient-bg .footer-widget .widget.footer-nav-widget .widget-nav li a:hover{
     color: var(--blue-dark);
 }
-
 /* Page Footer */
 .page-footer{
     position: relative;
@@ -4950,8 +4756,6 @@ button {
 /*---==========================
     End Footer css 
 =========================---*/
-
-
 /*---==========================
    Start Dark Page Css
 =========================---*/
@@ -4963,7 +4767,6 @@ button {
 .home-v3-wrapper h6{
     font-weight: 500;
 }
-
 /*---==========================
    End Dark Page Css
 =========================---*/
