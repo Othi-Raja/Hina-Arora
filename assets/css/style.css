@@ -1,33 +1,4 @@
-/*-----------------------------------------------------------------------------------
-    Template Name: Pixlab - Creative Agency HTML Template
-    Description: Pixlab – Creative Agency HTML Template have an awesome design for a website of Agency, Web Studio, Blog, Gallery Photo, Corporate Company, Community and other. It’s the clean, modern and beautiful grid-based template.
-    Author:  Wordpressriver
-    Author URI: https://themeforest.net/user/wordpressriver
-    Version: 1.0
-----------------------------------------------------------------------------------
-    ===================
-        CSS INDEX
-    ===================
-    01. Start Common  css
-    02. Start Header css
-    03. Hero css
-    04. About css
-    05. Service css
-    06. Portfolio css
-    07. Counter css
-    08. Testimonial css
-    09. CTA Section css
-    10. Pricing css
-    11. Team  css
-    12. Skill  css
-    13. Elements  css
-    14. Blog Section css
-    15. Contact css
-    16. Footer css
-----------------------------------------------------------------------------------*/
-/*---==========================
-   01. Start Common  css 
-=========================---*/
+
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 /* Animate css */
@@ -143,7 +114,7 @@ img {
 blockquote{
 	margin: 0;
 }
-body {
+html,body {
 	font-family: var(--dmsans);
 	font-weight: normal;
 	font-style: normal;
