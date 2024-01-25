@@ -340,3 +340,52 @@
     });
 
 })(window.jQuery);
+
+function toggleReadMore(contentId) {
+    const content = document.getElementById(contentId);
+    const allContents = document.querySelectorAll('.read-more-content');
+
+    // Close all other read more sections
+    allContents.forEach((item) => {
+        if (item.id !== contentId) {
+            item.classList.remove('expanded');
+        }
+    });
+
+    // Toggle the selected read more section
+    content.classList.toggle('expanded');
+
+    // Update buttons for all sections
+    updateReadMoreButtons();
+}
+
+function updateReadMoreButtons() {
+    const allContents = document.querySelectorAll('.read-more-content');
+    allContents.forEach((content) => {
+        const button = content.nextElementSibling; // Get the next element (Read More/Less button)
+        button.style.display = content.classList.contains('expanded') ? 'none' : 'block';
+    });
+}
+
+
+ // Create a link dictionary using JavaScript
+ const linkDictionary = {
+    productLink1:()=>window.open( 'https://topmate.io/hina_arora/755538',"_blank"),
+    productLink2:()=> window.open('https://topmate.io/hina_arora/106542','_blank'),
+    productLink3:()=> window.open('https://topmate.io/hina_arora/594236','_blank'),
+    productLink4:()=> window.open('https://topmate.io/hina_arora/172102','_blank')
+    // Add more links as needed
+};
+// scroll
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+}
+
+

@@ -269,6 +269,190 @@ ul.social-link li{
     position: relative;
     z-index: 1;
 }
+.read-more-content {
+    overflow: hidden;
+    max-height: 3em; /* Adjust the height based on the number of lines you want to display initially */
+    position: relative;
+    padding: 20px;
+    /* From https://css.glass */
+background: rgba(216, 248, 248, 0.2);
+ 
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+  }
+
+  .read-more-content.expanded {
+    max-height: none;
+    z-index: 2;
+    background-color: white;
+    font-size:small ;
+   
+    
+   
+  }
+
+  .read-more-button {
+    cursor: pointer;
+    color: blue;
+    padding: 20px;
+    
+  }
+  .message-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+/* products */
+.product-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.product-icon-top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    color: #3498db; /* Calendar icon color */
+}
+
+.product-icon-top-left i {
+    margin-right: 5px;
+}
+
+.product-icon-top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.product-icon-top-right i {
+    margin-right: 5px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e74c3c; /* Circle background color */
+}
+
+.product-title {
+    text-align: center;
+    margin-top: 60px; /* Adjust based on your design */
+}
+
+.product-bottom-left,
+.product-bottom-right {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-bottom-left p,
+.product-bottom-right p {
+    margin: 0;
+}
+
+.product-bottom-left p {
+    color: #27ae60; /* Timing color */
+}
+
+.product-bottom-right p {
+    color: #e67e22; /* Price color */
+}
+
+/* products end */
+ 
+/* join Now btn  */
+  /* Style the button */
+
+
+/* CSS */
+.buttonJoin {
+  background-color: var(--blue-dark);
+  border: 1px solid rgb(209,213,219);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top:30px ;
+}
+
+.buttonJoin:hover {
+  background-color:var(--heading);
+ 
+}
+
+.buttonJoin:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.buttonJoin:focus-visible {
+  box-shadow: none;
+}
+/* btn end  */
+.followmebtn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.followmebtn:hover {
+    background-color: #3498dbb1;
+}
+ 
+
+.profile-icon>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+}
+
+.message {
+    font-size: 14px;
+    color: #333;
+}
 .gradient-body:after{
     position: absolute;
     top: 0;
@@ -1338,7 +1522,13 @@ button {
 =========================---*/
 .hero-banner-v1{
     z-index: 1;
-    padding: 255px 0 180px;   
+    padding: 150px 0 180px;   
+}
+@media (min-width:1200px) {
+    .hero-banner-v1{
+        z-index: 1;
+        padding: 250px 0 180px;   
+    }
 }
 .hero-banner-v1:after{
     position: absolute;
@@ -2260,6 +2450,7 @@ button {
     -o-transition: all .3s;
     transition: all .3s;
 }
+ 
 .counter-area-v2 .counter-item .icon,
 .counter-area-v1 .counter-item .icon{
     font-size: 70px;
@@ -2364,7 +2555,7 @@ button {
     right: 15%;
     z-index: 1;
 }
-.testimonial-area-v1 .shape-img:after{
+/* .testimonial-area-v1 .shape-img:after{
     position: absolute;
     content: '';
     top: 0;
@@ -2374,7 +2565,7 @@ button {
     border: 1px solid #fff;
     border-radius: 110px;
     z-index: -1;
-}
+} */
 .testimonial-area-v1 .shape-img img{
     border-radius: 110px;
 }
