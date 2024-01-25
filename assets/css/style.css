@@ -123,6 +123,9 @@ html,body {
 	line-height: 32px;
 	overflow-x: hidden;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 .bg_cover {
 	background-position: center center;
 	background-size: cover;
