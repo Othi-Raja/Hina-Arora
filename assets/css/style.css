@@ -18,8 +18,8 @@
 /* Root css */
 :root {
 	--text-color: #808285;
-	--heading: #191919;
-    --blue-dark: #ff0000;
+	--heading: #b82424;
+    --blue-dark: #ff0000ac;
     /* --blue-dark: #5956e9; */
 	--light-gray: #fafafb;
 	--dmsans: 'DM Sans', sans-serif;
@@ -1472,7 +1472,8 @@ button {
 }
 .hero-banner-v1 .bg-one{
     left: 0;
-    background: url(../images/shape/bg-shape-1.png) no-repeat left;
+    background: url(../images/shape/bg-shape-2.png) no-repeat right;
+    /* filter: grayscale(0%) invert(0%) sepia(20%) saturate(150%) brightness(120%); */
 }
 .hero-banner-v1 .bg-two{
     right: 0;
