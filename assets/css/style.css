@@ -19,7 +19,8 @@
 :root {
 	--text-color: #808285;
 	--heading: #191919;
-    --blue-dark: #5956e9;
+    --blue-dark: #e98256;
+    /* --blue-dark: #5956e9; */
 	--light-gray: #fafafb;
 	--dmsans: 'DM Sans', sans-serif;
 }
@@ -123,6 +124,7 @@ html,body {
 	line-height: 32px;
 	overflow-x: hidden;
 }
+ 
 ::-webkit-scrollbar{
     display: none;
 }
@@ -256,7 +258,7 @@ backdrop-filter: blur(5px);
   }
   .read-more-button {
     cursor: pointer;
-    color: blue;
+    color: var(--blue-dark);
     padding: 20px;
   }
   .message-box {
