@@ -136,6 +136,15 @@
           enabled: true 
         }
     });
+// Document Ready
+$(document).ready(function() {
+    // Close the menu when a menu item is clicked
+    $('.nav-menu .menu-item a').on('click', function() {
+        $('.nav-menu').removeClass('menu-on');
+        $('.navbar-toggler').removeClass('active');
+        $(".nav-overlay").removeClass("active");
+    });
+});
     //===== Nice select js
     $('select').niceSelect();
     //===== Slick slider js
@@ -356,7 +365,6 @@ function scrollToSection(sectionId) {
         });
     }
 }
-
 // // disable right click
 // document.addEventListener('contextmenu', function(e) {
 //     e.preventDefault();
