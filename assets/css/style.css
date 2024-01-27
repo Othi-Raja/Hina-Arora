@@ -29,6 +29,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            user-select:none;
 }
 html{
     font-size: 100%;
