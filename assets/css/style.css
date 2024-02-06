@@ -411,11 +411,14 @@ backdrop-filter: blur(5px);
         font-size: 15px;
     }
     .fadeInRight{
-        height: 400px;
+        height: auto;
         overflow-y: hidden;
     }
     .tp{
         margin-top: -80px;
+    }
+    .tpab{
+        margin-bottom: 100px;
     }
     .hide{
         display: none;
@@ -1523,7 +1526,7 @@ button {
 =========================---*/
 .hero-banner-v1{
     z-index: 1;
-    padding: 150px 0 180px;   
+    padding: 120px 0 60px;   
 }
 @media (min-width:1200px) {
     .hero-banner-v1{
