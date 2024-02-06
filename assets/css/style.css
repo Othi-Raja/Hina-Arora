@@ -385,10 +385,39 @@ backdrop-filter: blur(5px);
 .followmebtn:hover {
     background-color: #3498dbb1;
 }
+/* .size{
+    font-size: 0px;
+    color: white;
+    padding: 50px;
+} */
+
+.card-text{
+    font-size: 25px;
+}
+.tmcard{
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+}
 @media (max-width:480px) {
     .footcon{
         margin-bottom: -10px;
     }
+    /* .size{
+        font-size: 20px;
+    } */
+    .card-text{
+        font-size: 15px;
+    }
+    .fadeInRight{
+        height: 400px;
+        overflow-y: hidden;
+    }
+    .tp{
+        margin-top: -80px;
+    }
+    
 }
 @media (max-width:370px)  {
     .grow_icon{
