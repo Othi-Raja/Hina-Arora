@@ -1526,7 +1526,7 @@ button {
 =========================---*/
 .hero-banner-v1{
     z-index: 1;
-    padding: 120px 0 60px;   
+    padding: 95px 0 60px;   
 }
 @media (min-width:1200px) {
     .hero-banner-v1{
