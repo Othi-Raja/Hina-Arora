@@ -1528,6 +1528,11 @@ button {
     z-index: 1;
     padding: 95px 0 60px;   
 }
+
+.last-portfolio-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 @media (min-width:1200px) {
     .hero-banner-v1{
         z-index: 1;
@@ -2189,7 +2194,7 @@ button {
     font-size: 34px;
 }
 .portfolio-style-one .text{
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 .portfolio-style-one .text h3.title{
     font-size: 24px;
