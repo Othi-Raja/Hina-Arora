@@ -2390,6 +2390,7 @@ button {
 .counter-area-v2 .counter-item,
 .counter-area-v1 .counter-item{
     position: relative;
+    cursor: pointer;
     z-index: 1;
 }
 .counter-area-v1 .counter-item{
@@ -2416,7 +2417,7 @@ button {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: #e9e056;
+    cursor: pointer;
     -webkit-filter: blur(57.5px);
             filter: blur(57.5px);
     visibility: hidden;
