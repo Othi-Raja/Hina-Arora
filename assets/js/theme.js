@@ -365,6 +365,62 @@ function scrollToSection(sectionId) {
         });
     }
 }
+
+function startCounters() {
+    var communityCounter = 0;
+    var viewsCounter = 0;
+    var contentCounter = 0;
+    var clientsCounter = 0;
+
+    var communityInterval = setInterval(function() {
+        communityCounter += 1;
+        document.getElementById('communityCounter').textContent = communityCounter;
+        if (communityCounter >= 2) {
+            clearInterval(communityInterval);
+        }
+    }, 10);
+
+    var viewsInterval = setInterval(function() {
+        viewsCounter += 1;
+        document.getElementById('viewsCounter').textContent = viewsCounter;
+        if (viewsCounter >= 60) {
+            clearInterval(viewsInterval);
+        }
+    }, 100);
+
+    var contentInterval = setInterval(function() {
+        contentCounter += 10;
+        document.getElementById('contentCounter').textContent = contentCounter;
+        if (contentCounter >= 1000) {
+            clearInterval(contentInterval);
+        }
+    }, 50);
+
+    var clientsInterval = setInterval(function() {
+        clientsCounter += 5;
+        document.getElementById('clientsCounter').textContent = clientsCounter;
+        if (clientsCounter >= 300) {
+            clearInterval(clientsInterval);
+        }
+    }, 50);
+}
+
+startCounters();
+// Callback function for Intersection Observer
+function handleIntersect(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounters();
+            observer.unobserve(entry.target); // Stop observing once it's triggered
+        }
+    });
+}
+
+// Set up the Intersection Observer
+const observer = new IntersectionObserver(handleIntersect, { threshold: 0.5 });
+
+// Start observing the target element
+observer.observe(document.getElementById('targetElement'));
 // // disable right click
 // document.addEventListener('contextmenu', function(e) {
 //     e.preventDefault();

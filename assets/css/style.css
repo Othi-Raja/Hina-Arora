@@ -163,6 +163,33 @@ ul.social-link li{
     z-index: 1;
     margin-bottom: 25px;
 }
+.box{
+    /* box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); */
+    margin-top: 20px;
+    padding: 20px;
+    color: red;
+    margin-right: 20px;
+    border-radius: 20px;
+    
+    
+}
+.boxSign{
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
+.boxNumber{
+    font-weight: lighter;
+    font-size: xx-large;
+}
+.boxText{
+    
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+  margin-top: 20px;
+}
 .section-title .st-one:after{
     position: absolute;
     content: "";
